@@ -29,7 +29,7 @@ class DragonTest < ActiveSupport::TestCase
 
   def test_that_middle_dragons_from_targ_dynasty
     # use your knowledge of factories to make this test pass!
-    middle_dragon = build(:dragon, age: 10)
+    middle_dragon = build(:dragon, age: 100)
 
     # not allowed to change the assert statement!
     skip unless middle_dragon
@@ -47,8 +47,8 @@ class DragonTest < ActiveSupport::TestCase
 
   def test_that_stranger_cannot_mount
     # use your knowledge of factories to make this test pass!
-    rider = nil
-    dragon = nil
+    rider = build(:rider, name: 'Aegon')
+    dragon = build(:dragon, name:'Balerion')
 
     # not allowed to change the assert statement!
     skip unless rider && dragon
