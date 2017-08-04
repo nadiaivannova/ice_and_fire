@@ -1,9 +1,6 @@
 FactoryGirl.define do
   factory :rider do
-    # 
-    # aegon = create(name:'aegon', sword: '' )
-    # daenerys = create(name:'daenery', sword: '')
-    #
-
+    nickname "The Conqueror"
+    email {"#{name}@westeros.com"}
   end
 end
